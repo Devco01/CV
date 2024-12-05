@@ -34,6 +34,27 @@
 }
 
 
+main {
+    display: flex;
+    max-width: 1160px;
+    margin-left: 50px;
+}
+
+.main-left {
+    max-width: 320px;
+    background-color:#f5f5f5;
+    flex: 1;
+    margin-right: 50px;
+}
+
+.main-right {
+    flex: 2;
+    background-color:#ffffff;
+}
+
+/* Le header */
+
+
 header {
     display: flex;
     justify-content:space-between;
@@ -41,7 +62,6 @@ header {
     padding: 20px;
     color:#ffffff;
 }
-
 
 .profile-photo {
     width: 110px;
@@ -110,5 +130,65 @@ header {
     gap: 10px;
 }
 
+/* Le main de gauche premiere partie */
 
+main h2 {
+    color: #17abb3;
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #e3e3e3;
+}
+
+.skill {
+    font-weight: 700;
+}
+
+.stars {
+    display: flex;
+    gap: 2px;
+}
+
+.star {
+    width: 15px;
+    height: 15px;
+    object-fit: contain;
+}
+
+.skill-item {
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 10px;
+}
+
+/* Le main de gauche deuxième partie */
+
+.language-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.level {
+    font-family: "Raleway" , sans-serif;
+}
+
+/* Le main de gauche troisième et quatrième partie */
+
+
+ul {
+    list-style-type: square;
+    
+}
+
+ul li::marker {
+    color: #17abb3;
+    font-size: 20px;
+}
+
+ul li {
+    color: #333333;
+    font-family: "Raleway", sans-serif;
+}
 

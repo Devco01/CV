@@ -73,6 +73,10 @@ header {
     margin-left: 60px;
 }
 
+.photo-link:hover .profile-photo {
+    cursor: zoom-in;
+}
+
 .header-content {
     display: flex;
     flex-direction: column;
@@ -269,4 +273,34 @@ footer {
 
 .footer a:hover {
     color: #e3e3e3;
+}
+
+
+.item:hover {
+    background-color: #f5f5f5;
+}
+
+.item {
+    position: relative;
+    padding: 15px 20px;
+    margin: 10px 0;
+}
+
+.item::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background-color: transparent;
+}
+
+.item:hover::before {
+    background-color: #17abb3;
+}
+
+.social-icon:hover img {
+    opacity: 0.7;
+    cursor: pointer;
 }
